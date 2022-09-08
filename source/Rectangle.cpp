@@ -90,3 +90,21 @@ bool Rectangle::setLength(double len) {
 //		exit(EXIT_FAILURE);
 //	}
 //}
+
+//***********************************************************
+// getWidth returns the value of the member variable width.
+//***********************************************************
+
+double Rectangle::getWidth() const { return width; }
+
+//***********************************************************
+// getLength returns the value of the member variable length.
+//***********************************************************
+
+double Rectangle::getLength() const { return length; }
+
+//***********************************************************
+// getArea returns the area of the rectangle.
+//***********************************************************
+
+double Rectangle::getArea() const { return width * length; }

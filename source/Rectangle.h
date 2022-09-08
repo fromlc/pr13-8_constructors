@@ -15,18 +15,18 @@ private:
     double length;
 
 public:
+    // constructors
     Rectangle();                 // Default Constructor
     Rectangle(double, double);   // Constructor
     
+    // setters
     bool setWidth(double);
     bool setLength(double);
       
-    // Instructor's note: these getters belong in Rectangle.cpp
-    double getWidth() const { return width; }
-
-    double getLength() const { return length; }
-
-    double getArea() const { return width * length; }
+    // getters
+    double getWidth() const;
+    double getLength() const;
+    double getArea() const;
 };
 
 #endif // RECTANGLE_H (end include guard)
