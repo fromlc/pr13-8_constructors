@@ -32,7 +32,9 @@ int main() {
 
 	// Create a Rectangle object.
 	Rectangle house(houseWidth, houseLength);
-
+	
+	Rectangle barn;
+	
 	// Display the house's width, length, and area.
 	cout << setprecision(2) << fixed;
 	cout << "The house is " << house.getWidth()

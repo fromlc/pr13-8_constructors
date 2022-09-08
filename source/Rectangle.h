@@ -9,22 +9,24 @@
 #ifndef RECTANGLE_H     // include guard, alternative to #pragma once
 #define RECTANGLE_H
 
-class Rectangle
-{
-   private:
-      double width;
-      double length;
-   public:
-      Rectangle(double, double);   // Constructor
-      void setWidth(double);
-      void setLength(double);
+class Rectangle {
+private:
+    double width;
+    double length;
+
+public:
+    Rectangle();                 // Default Constructor
+    Rectangle(double, double);   // Constructor
+    
+    void setWidth(double);
+    void setLength(double);
       
-      // Instructor's note: these getters belong in Rectangle.cpp
-      double getWidth() const { return width; }
+    // Instructor's note: these getters belong in Rectangle.cpp
+    double getWidth() const { return width; }
 
-      double getLength() const { return length; }
+    double getLength() const { return length; }
 
-      double getArea() const { return width * length; }
+    double getArea() const { return width * length; }
 };
 
 #endif // RECTANGLE_H

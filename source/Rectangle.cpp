@@ -21,6 +21,19 @@ using std::cout;
 // negative values.
 //***********************************************************
 
+Rectangle::Rectangle() {
+	width = 25;
+	length = 35;
+}
+
+//***********************************************************
+// The constructor accepts arguments for width and length.
+// 
+// Instructor's note: to be consistent with setLength() 
+// and setWidth(), this constructor should not accept
+// negative values.
+//***********************************************************
+
 Rectangle::Rectangle(double w, double len) {
 	width = w;
 	length = len;
