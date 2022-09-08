@@ -14,29 +14,21 @@
 using std::cout;
 
 //***********************************************************
-// The constructor accepts arguments for width and length.
-// 
-// Instructor's note: to be consistent with setLength() 
-// and setWidth(), this constructor should not accept
-// negative values.
+// Default constructor sets default width and length.
 //***********************************************************
 
-Rectangle::Rectangle() {
-	width = 25;
-	length = 35;
-}
+Rectangle::Rectangle() : width(25), length(35) {}
 
 //***********************************************************
 // The constructor accepts arguments for width and length.
 // 
-// Instructor's note: to be consistent with setLength() 
-// and setWidth(), this constructor should not accept
-// negative values.
+// To be consistent with setLength() and setWidth(),
+// this constructor uses the absolute values of paramters.
 //***********************************************************
 
 Rectangle::Rectangle(double w, double len) {
-	width = w;
-	length = len;
+	w >= 0 ? width = w : width = -w;
+	len >= 0 ? length = len : length = -len;
 }
 
 //***********************************************************

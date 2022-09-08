@@ -29,4 +29,4 @@ public:
     double getArea() const { return width * length; }
 };
 
-#endif // RECTANGLE_H
+#endif // RECTANGLE_H (end include guard)
