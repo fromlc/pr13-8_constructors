@@ -18,8 +18,8 @@ public:
     Rectangle();                 // Default Constructor
     Rectangle(double, double);   // Constructor
     
-    void setWidth(double);
-    void setLength(double);
+    bool setWidth(double);
+    bool setLength(double);
       
     // Instructor's note: these getters belong in Rectangle.cpp
     double getWidth() const { return width; }

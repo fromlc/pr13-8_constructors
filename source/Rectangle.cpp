@@ -33,31 +33,60 @@ Rectangle::Rectangle(double w, double len) {
 
 //***********************************************************
 // setWidth sets the value of the member variable width.
+// 
+// To be consistent with the constructor and setLength(),
+// this function uses the absolute value of its parameter.
+// 
+// Returns
+//		- false when parameter value is negative,
+//		- true otherwise
 //***********************************************************
 
-void Rectangle::setWidth(double w) {
-	if (w >= 0)
+bool Rectangle::setWidth(double w) {
+	if (w >= 0) {
 		width = w;
-	else {
-		cout << "Invalid width\n";
-		exit(EXIT_FAILURE);
+		return true;
 	}
+
+	width = -w;
+	return false;
 }
+
+//void Rectangle::setWidth(double w) {
+//	if (w >= 0)
+//		width = w;
+//	else {
+//		cout << "Invalid width\n";
+//		exit(EXIT_FAILURE);
+//	}
+//}
 
 //***********************************************************
 // setLength sets the value of the member variable length.
 // 
-// Instructor's note: setLength() should not exit. Instead,
-// it should either:
-//	1) return false and let the app handle the problem, or
-//  2) set length to the absolute value of len.
+// To be consistent with the constructor and setWidth(),
+// this function uses the absolute value of its parameter.
+// 
+// Returns
+//		- false when parameter value is negative,
+//		- true otherwise
 //***********************************************************
 
-void Rectangle::setLength(double len) {
-	if (len >= 0)
+bool Rectangle::setLength(double len) {
+	if (len >= 0) {
 		length = len;
-	else {
-		cout << "Invalid length\n";
-		exit(EXIT_FAILURE);
+		return true;
 	}
+
+	length = -len;
+	return false;
 }
+
+//void Rectangle::setLength(double len) {
+//	if (len >= 0)
+//		length = len;
+//	else {
+//		cout << "Invalid length\n";
+//		exit(EXIT_FAILURE);
+//	}
+//}
