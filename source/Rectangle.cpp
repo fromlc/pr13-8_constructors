@@ -11,13 +11,14 @@
 #include <iostream>      // Needed for cout
 #include <cstdlib>       // Needed for the exit function
 
-using std::cout;
+constexpr double DEFAULT_WIDTH = 10.0;
+constexpr double DEFAULT_LENGTH = 15.0;
 
 //***********************************************************
 // Default constructor sets default width and length.
 //***********************************************************
 
-Rectangle::Rectangle() : width(25), length(35) {}
+Rectangle::Rectangle() : width(DEFAULT_WIDTH), length(DEFAULT_WIDTH) {}
 
 //***********************************************************
 // The constructor accepts arguments for width and length.
