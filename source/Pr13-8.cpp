@@ -10,6 +10,11 @@
 
 #include "Rectangle.h"
 
+//----------------------------------------------------------------------
+// comment for release mode
+//----------------------------------------------------------------------
+#define DEBUG
+
 using std::cin;
 using std::cout;
 using std::fixed;
@@ -22,6 +27,10 @@ int main() {
 	// To hold the room width and length
 	double houseWidth, houseLength; 
 
+#ifdef DEBUG
+	houseWidth = 30;
+	houseLength = 40;
+#else
 	// Get the width of the house.
 	cout << "In feet, how wide is your house? ";
 	cin >> houseWidth;
@@ -29,19 +38,28 @@ int main() {
 	// Get the length of the house.
 	cout << "In feet, how long is your house? ";
 	cin >> houseLength;
+#endif
 
 	// Create a Rectangle object.
 	Rectangle house(houseWidth, houseLength);
-	
 	Rectangle barn;
 	
-	// Display the house's width, length, and area.
 	cout << setprecision(2) << fixed;
-	cout << "The house is " << house.getWidth()
+
+	// Display the house's width, length, and area.
+	cout << "\nThe house is " << house.getWidth()
 		<< " feet wide.\n";
 	cout << "The house is " << house.getLength()
 		<< " feet long.\n";
 	cout << "The house has " << house.getArea()
+		<< " square feet of area.\n";
+
+	// Display the barn's width, length, and area.
+	cout << "\nThe barn is " << barn.getWidth()
+		<< " feet wide.\n";
+	cout << "The barn is " << barn.getLength()
+		<< " feet long.\n";
+	cout << "The barn has " << barn.getArea()
 		<< " square feet of area.\n";
 
 	return 0;

@@ -18,7 +18,7 @@ constexpr double DEFAULT_LENGTH = 15.0;
 // Default constructor sets default width and length.
 //***********************************************************
 
-Rectangle::Rectangle() : width(DEFAULT_WIDTH), length(DEFAULT_WIDTH) {}
+Rectangle::Rectangle() : width(DEFAULT_WIDTH), length(DEFAULT_LENGTH) {}
 
 //***********************************************************
 // The constructor accepts arguments for width and length.
