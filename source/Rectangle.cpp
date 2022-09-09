@@ -8,9 +8,6 @@
 //----------------------------------------------------------------------
 #include "Rectangle.h"   // Needed for the Rectangle class
 
-#include <iostream>      // Needed for cout
-#include <cstdlib>       // Needed for the exit function
-
 constexpr double DEFAULT_WIDTH = 10.0;
 constexpr double DEFAULT_LENGTH = 15.0;
 
