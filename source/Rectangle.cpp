@@ -50,15 +50,6 @@ bool Rectangle::setWidth(double w) {
 	return false;
 }
 
-//void Rectangle::setWidth(double w) {
-//	if (w >= 0)
-//		width = w;
-//	else {
-//		cout << "Invalid width\n";
-//		exit(EXIT_FAILURE);
-//	}
-//}
-
 //***********************************************************
 // setLength sets the value of the member variable length.
 // 
@@ -79,15 +70,6 @@ bool Rectangle::setLength(double len) {
 	length = -len;
 	return false;
 }
-
-//void Rectangle::setLength(double len) {
-//	if (len >= 0)
-//		length = len;
-//	else {
-//		cout << "Invalid length\n";
-//		exit(EXIT_FAILURE);
-//	}
-//}
 
 //***********************************************************
 // getWidth returns the value of the member variable width.
